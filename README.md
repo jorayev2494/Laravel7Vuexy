@@ -42,8 +42,8 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 ![Images](/resources/assets/images/attachment_.png)
 
 #### Links
-[GitHub](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/landing)
-[GitHub](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/analytics)
+[Vuexy](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/landing)
+[Demo](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/analytics)
 
 ## Laravel Sponsors
 
