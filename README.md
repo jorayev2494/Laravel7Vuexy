@@ -42,6 +42,7 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 ![Images](/resources/assets/images/attachment_.png)
 
 #### Links
+[Documentation](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation/development/laravelIntegration.html#folder-structure)
 [Vuexy](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/landing)
 [Demo](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/analytics)
 
