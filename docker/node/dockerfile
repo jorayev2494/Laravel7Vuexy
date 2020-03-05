@@ -1,0 +1,6 @@
+FROM node:latest
+
+RUN apt-get update
+RUN node -v && npm -v
+
+WORKDIR /var/project

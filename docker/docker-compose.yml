@@ -1,0 +1,74 @@
+version: "3.3"
+services: 
+    # Nginx Service
+    nginx:
+        build: 
+            context: ./nginx
+            dockerfile: dockerfile
+        container_name: ${PROJECT_NAME}-ngx
+        restart: unless-stopped
+        tty: true
+        volumes: 
+            - ../:/var/project
+        links: 
+            - php
+        ports: 
+            - 8080:80
+        networks: 
+            - laravel-${PROJECT_NAME}
+    
+    # PHP service
+    php:
+        build: 
+            context: ./php
+            dockerfile: dockerfile
+        container_name: ${PROJECT_NAME}-php_fpm
+        tty: true
+        volumes: 
+            - ../:/var/project
+        links: 
+            - mysql
+        networks: 
+            - laravel-${PROJECT_NAME}
+    
+    # Node Service
+    node:
+        build: 
+            context: ./node
+            dockerfile: dockerfile
+        container_name: ${PROJECT_NAME}-node
+        tty: true
+        volumes: 
+            - ../:/var/project
+        networks: 
+            - laravel-${PROJECT_NAME}
+
+    # MySQL
+    mysql:
+        image: mysql:5.7
+        container_name: ${PROJECT_NAME}-db
+        restart: unless-stopped
+        tty: true
+        volumes: 
+            - ./mysql/volumes:/var/lib/mysql
+        ports: 
+            - 3366:3306
+        environment: 
+            - MYSQL_DATABASE=laravel-${PROJECT_NAME}
+            - MYSQL_ROOT_PASSWORD=laravel
+        networks:
+            - laravel-${PROJECT_NAME}
+
+    # Redis Service
+    redis:
+        image: redis:latest
+        container_name: ${PROJECT_NAME}-redis
+        restart: unless-stopped
+        ports: 
+            - 6379:6379
+        networks: 
+            - laravel-${PROJECT_NAME}
+
+networks: 
+    laravel-furnicom:
+        driver: bridge
