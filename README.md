@@ -1,4 +1,9 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center">
+    <img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400">
+    <br>
+    <img src="/resources/assets/images/logo/logo.png" width="78" height="auto" width="400">
+    <br>
+</p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -21,11 +26,24 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Learning Laravel 7 && Vuexy Admin Dashboard 4.1
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+### One Image
+![Images](/resources/assets/images/preview.gif)
+
+### Two Image
+![Images](/resources/assets/images/attachment.png)
+
+### Three Image
+![Images](/resources/assets/images/attachment_.png)
+
+#### Links
+[Vuexy](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/landing)
+[Demo](https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/analytics)
 
 ## Laravel Sponsors
 

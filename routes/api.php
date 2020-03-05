@@ -21,6 +21,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get("/users", function() {
-    $users = factory(User::class, 5000)->make();
+    $users = factory(User::class, 100)->make();
     return $users;
 });
