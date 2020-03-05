@@ -1314,21 +1314,22 @@ function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("
   // },
   fetchUsers: function fetchUsers(_ref) {
     var commit = _ref.commit;
-    return new Promise(function (resolve, reject) {
-      _axios_js__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/user-management/users").then(function (response) {
-        commit('SET_USERS', response.data);
-        resolve(response);
-      }).catch(function (error) {
-        reject(error);
-      });
-    }); // return new Promise((resolve, reject) => {
-    //   axios.get("/api/users")
+    // return new Promise((resolve, reject) => {
+    //   axios.get("/api/user-management/users")
     //     .then((response) => {
     //       commit('SET_USERS', response.data)
     //       resolve(response)
     //     })
     //     .catch((error) => { reject(error) })
     // })
+    return new Promise(function (resolve, reject) {
+      _axios_js__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/users").then(function (response) {
+        commit('SET_USERS', response.data);
+        resolve(response);
+      }).catch(function (error) {
+        reject(error);
+      });
+    });
   },
   fetchUser: function fetchUser(_ref2, userId) {
     _objectDestructuringEmpty(_ref2);

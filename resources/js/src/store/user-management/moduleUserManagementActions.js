@@ -21,23 +21,23 @@ export default {
   //   })
   // },
   fetchUsers({ commit }) {
-    return new Promise((resolve, reject) => {
-      axios.get("/api/user-management/users")
-        .then((response) => {
-          commit('SET_USERS', response.data)
-          resolve(response)
-        })
-        .catch((error) => { reject(error) })
-    })
-
     // return new Promise((resolve, reject) => {
-    //   axios.get("/api/users")
+    //   axios.get("/api/user-management/users")
     //     .then((response) => {
     //       commit('SET_USERS', response.data)
     //       resolve(response)
     //     })
     //     .catch((error) => { reject(error) })
     // })
+
+    return new Promise((resolve, reject) => {
+      axios.get("/api/users")
+        .then((response) => {
+          commit('SET_USERS', response.data)
+          resolve(response)
+        })
+        .catch((error) => { reject(error) })
+    })
   },
   fetchUser({}, userId) {
     return new Promise((resolve, reject) => {
